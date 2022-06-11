@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll</title>
+</head>
+<body>
+    <style>
+        .blue {
+            width: 0px;
+            height: 5px;
+            background-color: rgb(92, 100, 254);
+        }
+        .lyrics {
+            width: 250px;
+            height: 150px;
+            overflow-y: scroll;
+            background-color: white;
+        }
+    </style>
+    <div class = "blue"></div>
+    <div class = "lyrics">
+        <p>
+            One, Two, Three,
+            One, Two,
+            Yesterday it finally came,
+            A sunny afternoon,
+            I was on my way to buy some flowers for you,
+            Thought that we could hide away,
+            In a corner of the heath,
+            There's never been someone who's so perfect for me,
+            But I got over it and I said,
+            “Give me something old and red”,
+            I pay for it more than I did back then,
+            There's just no getting through,
+            Without you,
+            A bottle of rouge,
+            Just me and you,
+            Sitting in the garden, I'm a couple glasses in,
+            I was tryna count up all the places we've been,
+            You're always there, so don't overthink,
+            I'm so over whites and pinks,
+            I pay for it more than I did back then,
+            There's just no getting through,
+            Without you,
+            A bottle of rouge,
+            Just me and you,
+            Nineteen Eighty-Two,
+            Just me and you,
+            There's just no getting through,
+            The grape juice blues,
+            One, Two, Three,
+            One, Two, Three,
+            One, Two, Three,
+            One,
+        </p>
+    </div>
+    <script>
+        let bar = document.querySelector(".blue");
+        let lyric = document.querySelector(".lyrics");
+
+        lyric.addEventListener("scroll", function(){
+            let scrollTop = lyric.scrollTop;
+            let scrollHeight = lyric.scrollHeight - lyric.clientHeight;
+            let per = scrollTop / scrollHeight;
+            bar.style.width = `${per*250}px`;
+        });
+    </script>
+</body>
+</html>
