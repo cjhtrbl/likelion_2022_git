@@ -1,0 +1,21 @@
+/* 여기 눌러봐 -> 짠 내가 생겼어 */
+.bar {
+    width: 100%;
+    height: 50px;
+    background-color: purple;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.newBar {
+    width: 100%;
+    height: 50px;
+    background-color: orange;
+    text-align: center;
+    padding-top: 20px;
+    display: none;
+}
+
+.show {
+    display: block;
+}
