@@ -1,0 +1,268 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');
+
+.background{
+    position: relative;
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+    width: 375px;
+    height: 812px;
+    background: #F2F2F2;
+}
+
+/* status bar */
+.status_bar{
+    position: relative;
+    display: flex;
+    width: 375px;
+    height: 30px;
+    background: #D9D9D9;
+}
+
+.time{
+    margin: 0px;
+    padding-top: 7px;
+    padding-left: 19.89px;
+    width: 54px;
+    height: 18px;
+    left: 0px;
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.165px;
+    color: #000000;
+}
+
+/* topbar */
+.free_board{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    width: 375px;
+    height: 60px;
+    background: #326A31;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.back{
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: 16px;
+}
+
+.menu{
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: 329px;
+}
+
+.free_board_txt{
+    margin: 0px;
+    width: 96px;
+    height: 26px;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #F5F5F5;
+}
+
+.title{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    margin: auto;
+    margin-top: 8px;
+    box-sizing: border-box;
+    width: 343px;
+    height: 34px;
+    background: #F5F5F5;
+    border: 1px solid #326A31;
+    border-radius: 5px;
+}
+
+.title_txt{
+    width: 156px;
+    height: 19px;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px; /*16px -> 15px로 줄임 */
+    line-height: 19px;
+    text-align: center;
+    color: #323232;
+}
+
+/* chat */
+.profile{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 16px;
+    top: 171px;
+    background: #D8D8D8;
+    border-radius: 5px;
+}
+
+.nickname{
+    margin: auto;
+    position: absolute;
+    width: 32px;
+    height: 14px;
+    left: 48px;
+    top: 171px;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #636363;
+}
+
+.chat_left_box{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    box-sizing: border-box;
+    position: absolute;
+    width: 221px;
+    height: 127px;
+    left: 48px;
+    top: 192px;
+    background: #F5F5F5;
+    border: 1px solid #D8D8D8;
+    border-radius: 5px;
+}
+
+.chat_right_box{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    box-sizing: border-box;
+    position: absolute;
+    width: 221px;
+    height: 83px;
+    left: 138px;
+    top: 349px;
+    background: #F5F5F5;
+    border: 1px solid #D8D8D8;
+    border-radius: 5px;
+}
+
+.date_left{
+    position: absolute;
+    margin: 0;
+    left: 190px;
+    top: 323px;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: right;
+    color: #919191;
+}
+
+.date_right{
+    position: absolute;
+    margin: 0;
+    left: 138px;
+    top: 436px;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 8px;
+    line-height: 10px;
+    color: #919191;
+}
+
+.chat_left_txt{
+    display: flex;
+        flex-basis: 221px;
+        width: 221px;
+    padding: 7px;
+    width: 205px;
+    height: 112px;
+    left: 56px;
+    top: 199px;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 14px;
+    color: #323232;
+}
+
+.chat_right_txt{
+    display: flex;
+        flex-basis: 221px;
+        width: 221px;
+    padding: 7px;
+    width: 205px;
+    height: 70px;
+    left: 146px;
+    top: 356px;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 14px;
+    color: #323232;
+}
+
+/* 상대방이 채팅을 나갔습니다 */
+.out_txt{
+    position: absolute;
+    margin-top: 40;
+    width: 134px;
+    height: 14px;
+    left: 121px;
+    top: 436px;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+
+/* main */
+
+color: #326A31;
+}
+
+/* bar */
+.bar{
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 16px;
+    box-sizing: border-box;
+    width: 343px;
+    height: 36px;
+    background: #F5F5F5;
+    border: 1px solid #326A31;
+    border-radius: 5px;
+}
+
+.input{
+    left: 2.92%;
+    right: 72.01%;
+    top: 30.56%;
+    bottom: 30.56%;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #636363;
+}
